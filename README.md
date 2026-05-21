@@ -22,7 +22,7 @@ O programa permite:
 ## 📂 Estrutura do projeto
 
 ```text
-agenda-contatos-cpp/
+Atividade-contatos-cpp/
 ├── src/
 │   └── main.cpp
 ├── README.md
