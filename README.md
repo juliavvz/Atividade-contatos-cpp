@@ -1,30 +1,128 @@
-# 📇 Agenda de Contatos em C++
+# 📇 Sistema de Contatos em C++
 
-Um programa simples em C++ para gerenciar contatos, com armazenamento de dados pessoais e cálculo automático de idade.
+## 📌 Descrição
+Este projeto em C++ implementa um sistema simples de cadastro de contatos utilizando Programação Orientada a Objetos (POO).
 
-## 🚀 Funcionalidades
+O programa permite:
+- cadastrar até 5 contatos;
+- armazenar nome, email, telefone e data de nascimento;
+- calcular automaticamente a idade de cada contato;
+- exibir a lista completa de contatos cadastrados.
 
-- Cadastro de 5 contatos
-- Armazenamento de:
-  - Nome
-  - E-mail
-  - Telefone
-  - Data de nascimento
-- Cálculo automático da idade baseado na data atual do sistema
-- Exibição organizada de todos os contatos cadastrados
+---
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias utilizadas
+- C++
+- Biblioteca `<iostream>`
+- Biblioteca `<string>`
+- Biblioteca `<ctime>`
 
-- C++ (padrão C++11 ou superior)
-- Biblioteca padrão: iostream, string, ctime
+---
 
-## 📦 Estrutura das Classes
+## 📂 Estrutura do projeto
 
-- **Data**: dia, mês, ano (com getters/setters)
-- **Contato**: nome, email, telefone, data de nascimento (com getters/setters e método idade())
+```text
+Projeto-Contatos/
+├── src/
+│   └── main.cpp
+├── README.md
+```
 
-## ▶️ Como executar
+---
+
+## 🧩 Classes utilizadas
+
+### 📅 Classe `Data`
+Responsável por armazenar:
+- dia
+- mês
+- ano
+
+Possui:
+- construtor
+- getters
+- setters
+
+---
+
+### 👤 Classe `Contato`
+Responsável por armazenar:
+- nome
+- email
+- telefone
+- data de nascimento
+
+Possui:
+- construtor
+- getters
+- setters
+- método `idade()` para calcular a idade automaticamente
+
+---
+
+## ▶️ Como compilar e executar
+
+### 🔹 Compilando
 
 ```bash
-g++ contatos.cpp -o contatos
+g++ src/main.cpp -o contatos
+```
+
+### 🔹 Executando
+
+#### Windows
+```bash
+contatos.exe
+```
+
+#### Linux / MacOS
+```bash
 ./contatos
+```
+
+---
+
+## ▶️ Funcionamento
+1. O usuário cadastra 5 contatos;
+2. O sistema solicita:
+   - nome
+   - email
+   - telefone
+   - data de nascimento
+3. Ao final, todos os contatos são exibidos juntamente com suas idades.
+
+---
+
+## 💻 Exemplo de execução
+
+```text
+--- Contato 1 ---
+Nome: Julia
+Email: julia@email.com
+Telefone: 13999999999
+Data de nascimento (dia mes ano): 10 5 2005
+
+=== LISTA DE CONTATOS ===
+
+Contato 1:
+Nome: Julia
+Email: julia@email.com
+Telefone: 13999999999
+Idade: 20 anos
+```
+
+---
+
+## 📚 Conceitos aplicados
+- Programação Orientada a Objetos
+- Classes e Objetos
+- Encapsulamento
+- Construtores
+- Vetores de objetos
+- Manipulação de datas
+- Entrada e saída de dados
+
+---
+
+## 👩‍💻 Autora
+Júlia Vitória - @juliavvz
